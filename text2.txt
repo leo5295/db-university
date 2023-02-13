@@ -1,3 +1,4 @@
 GROUP BY
 
 1. SELECT YEAR(enrolment_date) AS Anno, COUNT(*) AS NumIscritti FROM Students GROUP BY YEAR(enrolment_date);
+2. SELECT office_address, COUNT(*) AS NumInsegnanti FROM teachers GROUP BY office_address;
