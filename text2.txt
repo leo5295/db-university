@@ -8,3 +8,4 @@ GROUP BY
 INNER JOIN
 
 1. SELECT students.*, degrees.* FROM students INNER JOIN degrees ON degrees.id = students.degree_id WHERE degrees.name = 'Corso di Laurea in Economia';
+2. SELECT degrees.* FROM degrees INNER JOIN departments ON departments.id = degrees.department_id WHERE degrees.level = 'Magistrale' AND departments.name = 'Dipartimento di Neuroscienze';
