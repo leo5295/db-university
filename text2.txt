@@ -4,3 +4,7 @@ GROUP BY
 2. SELECT office_address, COUNT(*) AS NumInsegnanti FROM teachers GROUP BY office_address;
 3. SELECT exam_id, AVG(vote) AS MediaVoti FROM exam_student GROUP BY exam_id;
 4. SELECT department_id, COUNT(*) AS NumCorsiDiLaurea FROM degrees GROUP BY department_id;
+
+INNER JOIN
+
+1. SELECT students.*, degrees.* FROM students INNER JOIN degrees ON degrees.id = students.degree_id WHERE degrees.name = 'Corso di Laurea in Economia';
